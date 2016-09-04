@@ -23,7 +23,7 @@
                 x: function (d) { return d.key; },
                 y: function (d) { return d.y; },
                 valueFormat: (d3.format(".0f")),
-                color: ['rgb(0, 150, 136)', 'rgb(191, 191, 191)'],
+                color: ['#BDBDBD', '#00b9be'],
                 showLabels: false,
                 showLegend: false,
                 tooltips: false,

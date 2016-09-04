@@ -9,7 +9,10 @@
         var vm = this;
 
         // TODO: move data to the service
-        vm.visitorsChartData = [ {key: 'Mobile', y: 5264}, { key: 'Desktop', y: 3872} ];
+        vm.completedCal = 1234;
+        vm.goalCal = 2000;
+        // TODO: put in a check in case they exceeed the calorie goal
+        vm.visitorsChartData = [ { key: 'Calories to go', y: vm.goalCal - vm.completedCal}, {key: 'Completed', y: vm.completedCal} ];
 
         vm.chartOptions = {
             chart: {
@@ -19,10 +22,10 @@
                 x: function (d) { return d.key; },
                 y: function (d) { return d.y; },
                 valueFormat: (d3.format(".0f")),
-                color: ['rgb(0, 150, 136)', '#E75753'],
+                color: ['#BDBDBD', '#00b9be'],
                 showLabels: false,
                 showLegend: false,
-                title: 'Over 9K',
+                title: vm.completedCal + ' cal',
                 margin: { top: -10 }
             }
         };

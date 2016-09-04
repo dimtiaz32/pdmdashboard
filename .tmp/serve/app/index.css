@@ -47,7 +47,7 @@ body {
   font-size: 12px;
   top: 2px;
   right: 2px;
-  background-color: #E75753;
+  background-color: #00b9be;
 }
 
 .panel-widget {
@@ -102,7 +102,7 @@ a.md-button.md-warn.md-raised, a.md-button.md-warn.md-fab, .md-button.md-warn.md
 }
 
 md-radio-button.md-accent.md-checked .md-label span {
-  color: #00B9BE;
+  color: #00b9be;
 }
 
 .md-toolbar-tools h1 {
